@@ -9,7 +9,7 @@ import java.util.Iterator;
 public class Q1_7 {
   public static void main(String [] args) throws IOException
   {
-    BufferedReader br = new BufferedReader(new FileReader("/home/pan/git/interview/CodingInterview/Q1_7.in"));
+    BufferedReader br = new BufferedReader(new FileReader("/home/pan/git/interview/CodingInterview/resource/Q1_7.in"));
     String line;
     String src = "";
     int N = 0, M = 0;
