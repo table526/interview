@@ -3,6 +3,8 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
+import javax.swing.text.AbstractDocument.BranchElement;
+
 
 public class Q1_6 {
   public static void main(String [] args) throws IOException
@@ -10,13 +12,14 @@ public class Q1_6 {
     String src = "";
     int N = 0;
     try {
-      BufferedReader br = new BufferedReader(new FileReader("/home/pan/11791/CodingInterview/resource/Q1_6.in"));
+      BufferedReader br = new BufferedReader(new FileReader("/home/pan/git/interview/CodingInterview/resource/Q1_6.in"));
       String line;
       while((line = br.readLine()) != null)
       {
         src = src + line + " ";
         N++;
       }
+      br.close();
     } catch (FileNotFoundException e) {
       // TODO Auto-generated catch block
       e.printStackTrace();
@@ -56,5 +59,6 @@ public class Q1_6 {
         System.out.print("\n");
       }
     }
+    
   }
 }
